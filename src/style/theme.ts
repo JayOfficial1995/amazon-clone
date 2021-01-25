@@ -3,11 +3,13 @@ export default {
         whiteColor : "#fff",
         blackColor : "#111",
         dullOrangeColor : "#febd69",
+        orangeColor: "#ffb04a",
         blueColor : "#232f3e",
         darkBlueColor : "#131921"
     },
 
     fontSize : {
+        h2: "1.4rem",
         h3 : "1.2rem",
         h4 : "1rem",
     },

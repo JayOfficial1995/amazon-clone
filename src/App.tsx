@@ -1,15 +1,14 @@
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./style/GlobatStyle";
+
+import Header from "./component/Header/Header";
 import theme from "./style/theme";
+import GlobalStyle from "./style/GlobatStyle";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
     <GlobalStyle />
-
-    <div>
-      jahangir khan
-    </div>
+      <Header />
     </ThemeProvider>
   );
 }
