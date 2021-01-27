@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
@@ -9,13 +10,13 @@ function Header() {
   return (
     <HeaderStyle>
       <section className="navbar-container">
-        <a href="#" className="logo-wrapper">
+        <Link to="/" className="logo-wrapper">
           <img
             src="./images/amazon-logo.png"
             alt="site-logo"
             className="logo"
           />
-        </a>
+        </Link>
 
         <article className="header-search">
           <input type="text" className="search-bar" />
@@ -33,10 +34,10 @@ function Header() {
             );
           })}
 
-          <article className="basket-items">
+          <Link to="/checkout" className="basket-items">
             <ShoppingBasketIcon className="basket-icon" />
             <span className="item-count">0</span>
-          </article>
+          </Link>
         </article>
       </section>
     </HeaderStyle>
