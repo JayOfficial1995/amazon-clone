@@ -15,6 +15,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
+
           <Route path="/checkout" exact component={Checkout} />
         </Switch>
       </ThemeProvider>
